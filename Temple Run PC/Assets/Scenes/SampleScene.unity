@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 1506281070597137143, guid: 007b0ba39236f7e42976ce5110ea41fe,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 007b0ba39236f7e42976ce5110ea41fe, type: 3}
@@ -772,11 +772,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8947119860283335442, guid: 007b0ba39236f7e42976ce5110ea41fe,
+    - target: {fileID: 1506281070597137143, guid: 007b0ba39236f7e42976ce5110ea41fe,
         type: 3}
-      propertyPath: platformToSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 7927187524750532160, guid: 007b0ba39236f7e42976ce5110ea41fe,
-        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 007b0ba39236f7e42976ce5110ea41fe, type: 3}
