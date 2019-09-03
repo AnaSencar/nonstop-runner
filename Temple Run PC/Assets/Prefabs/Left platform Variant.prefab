@@ -16,7 +16,9 @@ MonoBehaviour:
   - {fileID: 1121399961624763857}
   - {fileID: 7927187524750532160, guid: 007b0ba39236f7e42976ce5110ea41fe, type: 3}
   - {fileID: 4895948568613192855, guid: 0ab104b0eeaf8874abfd6a225aea2718, type: 3}
-  placeToSpawnPlatform: {fileID: 3114533343556850622}
+  - {fileID: 8016333997894031594, guid: 231fac7cf2786284b8377b691225e803, type: 3}
+  placeToSpawnPlatform:
+  - {fileID: 3114533343556850622}
 --- !u!1001 &206321241905183942
 PrefabInstance:
   m_ObjectHideFlags: 0
