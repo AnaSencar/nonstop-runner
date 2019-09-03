@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformToSpawn:
   - {fileID: 7927187524750532160}
-  - {fileID: 1121399961624763857, guid: 876d86a015aad21479a048818e0caf57, type: 3}
+  - {fileID: 4895948568613192855, guid: 0ab104b0eeaf8874abfd6a225aea2718, type: 3}
   - {fileID: 1121399961624763857, guid: 876d86a015aad21479a048818e0caf57, type: 3}
   placeToSpawnPlatform: {fileID: 3018550297639136945}
 --- !u!1001 &836682185
