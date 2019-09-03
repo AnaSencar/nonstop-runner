@@ -69,6 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8947119860283335442, guid: 007b0ba39236f7e42976ce5110ea41fe,
         type: 3}
+      propertyPath: platformToSpawn.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947119860283335442, guid: 007b0ba39236f7e42976ce5110ea41fe,
+        type: 3}
       propertyPath: platformToSpawn.Array.data[1]
       value: 
       objectReference: {fileID: 7927187524750532160, guid: 007b0ba39236f7e42976ce5110ea41fe,

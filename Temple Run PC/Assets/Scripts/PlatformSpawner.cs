@@ -10,7 +10,7 @@ public class PlatformSpawner : MonoBehaviour
     public void SpawnPlatform()
     {
         Vector3 positionOfObject = placeToSpawnPlatform.position;
-        Quaternion rotationOfObject = Quaternion.identity;
+        Quaternion rotationOfObject = placeToSpawnPlatform.rotation;
         int randomPlatformIndex = Random.Range(0, platformToSpawn.Length);
         Instantiate(platformToSpawn[randomPlatformIndex], positionOfObject, rotationOfObject);
     }
