@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.Characters.ThirdPerson;
 
 public class RotatePlayer : MonoBehaviour
 {
     private bool isPlayerInsideTrigger = false;
     private bool isLeftPlatform = false;
     private bool isRightPlatform = false;
-    private ThirdPersonCharacter thirdPersonCharacter;
 
     public bool IsPlayerInsideTrigger
     {
@@ -34,27 +32,20 @@ public class RotatePlayer : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        thirdPersonCharacter = GetComponent<ThirdPersonCharacter>();
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (isPlayerInsideTrigger)
         {
-            if(Input.GetKeyDown(KeyCode.Q) && isLeftPlatform)
+            if(Input.GetKeyDown(KeyCode.Q))
             {
-                transform.Rotate(transform.rotation.x, transform.rotation.y - 90f, transform.rotation.z);
-                Vector3 movement = transform.forward * 2f;
-                thirdPersonCharacter.Move(movement, false, false);
+                transform.Rotate(0, -90f, 0, Space.World);
+                isPlayerInsideTrigger = false;
             }
-            else if (Input.GetKeyDown(KeyCode.E) && isRightPlatform)
+            else if (Input.GetKeyDown(KeyCode.E))
             {
-                transform.Rotate(transform.rotation.x, transform.rotation.y + 90f, transform.rotation.z);
-                Vector3 movement = transform.forward * 2f;
-                thirdPersonCharacter.Move(movement, false, false);
+                transform.Rotate(0, 90f, 0, Space.World);
+                isPlayerInsideTrigger = false;
             }
         }
     }

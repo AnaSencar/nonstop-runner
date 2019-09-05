@@ -8,20 +8,14 @@ public class RotationTrigger : MonoBehaviour
     [SerializeField] bool isRightPlatform = false;
     private RotatePlayer rotatePlayer;
 
-    private void Awake()
+    private void Start()
     {
-        rotatePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<RotatePlayer>();
+        rotatePlayer = GameObject.FindGameObjectWithTag("VirtualCamera").GetComponent<RotatePlayer>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         rotatePlayer.IsPlayerInsideTrigger = true;
-        SetPlatforms();
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        rotatePlayer.IsPlayerInsideTrigger = false;
         SetPlatforms();
     }
 
