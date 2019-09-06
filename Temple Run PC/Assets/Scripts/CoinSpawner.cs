@@ -20,7 +20,9 @@ public class CoinSpawner : MonoBehaviour
         {
             int randomSpawnLocation = Random.Range(1, coinSpawnPoints.Length);
             int whichPrefabToSpawn = Random.Range(0, coinPrefab.Length);
-            Instantiate(coinPrefab[whichPrefabToSpawn], coinSpawnPoints[randomSpawnLocation]);
+            Vector3 positionOfObject = coinSpawnPoints[randomSpawnLocation].position;
+            Quaternion rotationOfObject = coinSpawnPoints[randomSpawnLocation].rotation;
+            Instantiate(coinPrefab[whichPrefabToSpawn], positionOfObject, rotationOfObject);
         }
     }
 

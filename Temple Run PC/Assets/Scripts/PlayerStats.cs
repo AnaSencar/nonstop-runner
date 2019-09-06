@@ -12,7 +12,6 @@ public class PlayerStats : MonoBehaviour
         {
             coinsCollected += 1;
             Destroy(other.gameObject);
-            Debug.Log(coinsCollected);
         }
     }
 }

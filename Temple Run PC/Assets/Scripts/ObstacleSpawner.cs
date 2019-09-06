@@ -23,8 +23,10 @@ public class ObstacleSpawner : MonoBehaviour
         {
             if (ShouldSpawnOnThisSpawnPoint())
             {
+                Vector3 positionOfObject = obstacleSpawnPoints[i].position;
+                Quaternion rotationOfObject = obstacleSpawnPoints[i].rotation;
                 int whichObstacleToSpawn = Random.Range(0, obstaclesPrefabs.Length);
-                Instantiate(obstaclesPrefabs[whichObstacleToSpawn],obstacleSpawnPoints[i]);
+                Instantiate(obstaclesPrefabs[whichObstacleToSpawn], positionOfObject, rotationOfObject);
             }
         }
     }

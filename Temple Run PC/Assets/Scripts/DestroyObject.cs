@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyPlatform : MonoBehaviour
+public class DestroyObject : MonoBehaviour
 {
     [SerializeField] float timeToDestroyPlatform = 20f;
 
