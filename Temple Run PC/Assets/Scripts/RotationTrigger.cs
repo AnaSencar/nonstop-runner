@@ -19,6 +19,11 @@ public class RotationTrigger : MonoBehaviour
         SetPlatforms();
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        rotatePlayer.IsPlayerInsideTrigger = false;
+    }
+
     private void SetPlatforms()
     {
         rotatePlayer.IsRightPlatform = isRightPlatform;

@@ -37,12 +37,12 @@ public class RotatePlayer : MonoBehaviour
     {
         if (isPlayerInsideTrigger)
         {
-            if(Input.GetKeyDown(KeyCode.Q))
+            if(Input.GetKeyDown(KeyCode.Q) && isLeftPlatform)
             {
                 transform.Rotate(0, -90f, 0, Space.World);
                 isPlayerInsideTrigger = false;
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetKeyDown(KeyCode.E) && isRightPlatform)
             {
                 transform.Rotate(0, 90f, 0, Space.World);
                 isPlayerInsideTrigger = false;
