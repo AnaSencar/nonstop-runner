@@ -7,9 +7,13 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] GameObject[] obstaclesPrefabs;
     [SerializeField] Transform[] obstacleSpawnPoints;
 
-    void Start()
+    private void Awake()
     {
         obstacleSpawnPoints = GetComponentsInChildren<Transform>();
+    }
+
+    void Start()
+    {
         SpawnObstacle();
     }
 
