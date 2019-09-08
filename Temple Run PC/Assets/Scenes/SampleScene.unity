@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_JumpPower
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_MoveSpeedMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11444856, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: characterSpeedRun
       value: 2
@@ -1174,6 +1178,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1bc5da7fd7d0e4d8e52f27be703709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1964915672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964915670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d7131d38cfafc40b310e8a111ab73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToIncreaseSpeed: 10
+  increaseSpeedAddition: 0.2
 --- !u!1001 &2054546883
 PrefabInstance:
   m_ObjectHideFlags: 0
