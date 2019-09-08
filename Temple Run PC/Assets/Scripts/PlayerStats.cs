@@ -8,6 +8,14 @@ public class PlayerStats : MonoBehaviour
     private int coinsCollected = 0;
     private bool isPlayerDead = false;
 
+    public int CoinsCollected
+    {
+        get
+        {
+            return coinsCollected;
+        }
+    }
+
     public bool IsPlayerDead
     {
         get
