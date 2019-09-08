@@ -194,6 +194,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6131156618711401270}
   - component: {fileID: 6404769709731775870}
+  - component: {fileID: 173096462469256017}
+  - component: {fileID: 7271636218594608388}
   m_Layer: 0
   m_Name: Obstacle Type 2
   m_TagString: Untagged
@@ -235,6 +237,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroyPlatform: 20
+--- !u!114 &173096462469256017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846446109410915950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b06f9c3cd659634f978e75863512d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7271636218594608388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846446109410915950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 0.25, z: 0.25}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &6908553404362173307
 GameObject:
   m_ObjectHideFlags: 0

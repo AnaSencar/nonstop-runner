@@ -1,10 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class PlayerStats : MonoBehaviour
 {
     private int coinsCollected = 0;
+    private bool isPlayerDead = false;
+
+    public bool IsPlayerDead
+    {
+        get
+        {
+            return isPlayerDead;
+        }
+        set
+        {
+            isPlayerDead = value;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
