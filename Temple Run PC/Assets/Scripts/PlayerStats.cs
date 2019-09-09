@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour
 {
     private int coinsCollected = 0;
     private bool isPlayerDead = false;
+    private UISceneManager instance;
 
     public int CoinsCollected
     {
@@ -25,6 +26,14 @@ public class PlayerStats : MonoBehaviour
         set
         {
             isPlayerDead = value;
+        }
+    }
+
+    private void Update()
+    {
+        if (isPlayerDead)
+        {
+            UISceneManager.instance.ShowUI();
         }
     }
 
