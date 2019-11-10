@@ -11,4 +11,4 @@ Temple Run clone for PC version
 -Platforms character has passed will be deleted after 20 seconds.\
 -Platforms are spawning based on position of previous platform.\
 -There is chance of randomly spawning obstacles and coins on predefined spots on platforms.\
--Cinemachine is used for camera following player.\
+-Cinemachine is used for camera following player.
